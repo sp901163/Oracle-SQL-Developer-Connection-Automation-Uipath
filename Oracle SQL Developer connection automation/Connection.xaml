@@ -1,0 +1,313 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Connection" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Connection" sap:VirtualizedContainerService.HintSize="892.0000000000001,1050.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Oracle SQL Developer : C:\Users\sharapaw\Documents\Data_3D\Vapp 20 OMS.sql" sap:VirtualizedContainerService.HintSize="449.6,1027.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,712.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''SQL Worksheet (Alt-F10)''" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="346, 73, 49, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;java name='org.openide.awt.ToolbarPool' role='tool bar' /&gt;&lt;java name='sqlworksheet.toolbar' role='tool bar' /&gt;&lt;java name='SQL Worksheet (Alt-F10)' role='combo box' /&gt;" FuzzySelectorArgument="&lt;java name='org.openide.awt.ToolbarPool' role='tool bar' /&gt;&lt;java name='sqlworksheet.toolbar' role='tool bar' /&gt;&lt;java name='SQL Worksheet (Alt-F10)' role='combo box' /&gt;" Guid="c6d0c423-7d4e-4061-984b-2c070a087fae" InformativeScreenshot="b06332484dd6eb0f40d2995867c503d5.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtFrame' title='Oracle SQL Developer : C:\Users\sharapaw\Documents\Data_3D\Vapp *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''push button''" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="ba2fee31-3208-4b15-8c66-19fd21e18fbf" CvElementArea="326, 94, 24, 24" CvType="Icon" DesignTimeRectangle="325, 93, 29, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java cls='JButton' role='push button' /&gt;" FuzzySelectorArgument="&lt;java cls='JButton' role='push button' /&gt;" Guid="4e9dba77-a654-4b15-ab19-1f9f86d6e9a2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARWSURBVFhH7ZbrS5RZGMDfFBVKJJKMKMWyCI0KLAwiiIiikigISsIPkd0ZENvVsCGddtVNx67j7DrjpaaldanUrGmaHGx3x7B1R2c0L+MFtR3HSR3d/oTfvq+zZpfXiYHaZaEPvw8D87zP7zznec45wuTkJP81XySm+SIxzf9PovPPTu623EX1WMWZ+2fIqM0gz5zHHdsdel29eCe8snEfIyCJR+2PyHqYReqdVPbX7ie5NpndVbtR1CgwtZhwe9xMTEzIxvojIImKpgqO1RxD7VBzafwS2d5s9lj3sMuwi2t11+jp72FsbEw21h8BSeif6UmpSeF052l2jO4gdjiW8CfhxGvjyanMwd5u59WrV7Kx/ghMolHPgeoDpHWmscmziQVDCwgyBbFSsxJluRJ7mx2PxyMb64/AJe4d4EjHETaObCRiMALhkcCK6ytQlilpbWv9dBLdrm7MHWYMzw3oGnVvOFp1lG23tr0rYRRYVLyIfYX7yL+bj7Zei+6pDoPVwGP7Y/pcfYyN++8TWQlp5BTVCrZXbCdJl0SiLnGKhJIEkm4nkdKdwlr3WsIHwxHqBYKvBxOuCicyL5KogiiivotilXoVB8sOUvd7HQOuAb9TIyuhMqnINGVS2l1K5etK1K/VFL4upPCvQtK96ax3r2fu4FyC+oMQOgSEZpFnItYZgmuCWVy4GNVtFc3tzX4bVlZCaVSSZk5D0adg7+Re1oyuIWE0gQRPAstdy4kYiCCoTxToERN2irSJtIq0zDDHOIf5+fNRaBQ0NDUwPDz8QZ5pZCXOPTxHqjmV1P5UEr2JzHPPI8wVRtjLMEIHQmcEukReiEgS9vcQGzYiL4Ljxcept9bjcrk+yDONrESxpZhDtYfY+mQrS58uJdgcjGASPyw2oWARkVYrVUASkMpfJ1Il8tMMoaWhxOTGkH4lHYvVEriE0WEkozqDzdc3E5cfR8w3MUSroolURhJWFIZgFhM5RKQK3BMT5oWy8KuFRGdGE/21j/iseJJVyVzUX6TxeWPg2+EZ89De047xFyNlVWWU3CxBc0PDYfVhlhUt861cqoZU9p8FYgtiOak+yZXyK2gqNFNoK7WU3yrngfEBHR0dfs8PWQlpnDyjHgZfDuLsddLl7JqiqLaIddp1CPffkhC3Ia4gjrOaszT81kDbi7Y3/3f2OBkYHJgS8Hpnv2FlJSQkESlwfHz8DaWWUjaUbvBJ2P6REPd/RYF4Yn6vxGa34Xa734mRvvGxm3VWCTn0DXqfRO17Evk+iU96bM+G4VcDW3RbCPkxxNecTwRC9CGs/nY1uT/k/jsXmMVh4dTNUyzJXELQKfGsOCEQpYhiZ85OLldextHm+PwSQyNDWNutlBvLuVBxgeySbM5rz3P1xlXqTHX09vV+/keN9IaUnnDOfic2h42mP5poam7C1mqj29nNyMiI3ymYjYAkJN6eGmnV00i/PzYFsxGwxOfgi4SPSf4GaRGBRr7rJLsAAAAASUVORK5CYII=" InformativeScreenshot="ffac13eb6a92ab34825080f6374075fa.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='Select Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Name''" EmptyFieldMode="SingleLine" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Text="New DB connection" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="337, 52, 462, 26" CvType="InputBox" DesignTimeRectangle="334, 53, 464, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Name' role='text' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Name' role='text' /&gt;" Guid="ba4d0f5f-8bb5-41ac-bfb2-d4c474583445" InformativeScreenshot="7ea81aed9d1d6c39c182287a3c989ec1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvTextArea="289, 57, 35, 13" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="290, 55, 34, 18" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Name' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Name' role='label' check:text='Name' /&gt;" Guid="010949d9-e009-4b3a-807e-69213195b982" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Username''" EmptyFieldMode="SingleLine" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Text="sharad" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="371, 213, 399, 25" CvType="InputBox" DesignTimeRectangle="372, 214, 397, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Username' role='text' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Username' role='text' /&gt;" Guid="79147e4f-b54f-495d-8c23-9edc76295674" InformativeScreenshot="a9520418e1c9749265e89918d0f20d15.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvTextArea="300, 218, 61, 13" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="302, 217, 60, 17" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Username' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Username' role='label' check:text='Username' /&gt;" Guid="8112a367-b262-41ee-9dd4-004c1ebfe1a0" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Password''" EmptyFieldMode="SingleLine" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Text="pawar" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="371, 246, 399, 25" CvType="InputBox" DesignTimeRectangle="372, 247, 397, 23" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Password' role='password text' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Password' role='password text' /&gt;" Guid="74a5cfb9-6343-4652-a177-4cefc01c6633" InformativeScreenshot="d438b73b1b04a8d728c6915f0d0cae8d.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvTextArea="300, 250, 58, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="302, 249, 57, 18" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Password' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Password' role='label' check:text='Password' /&gt;" Guid="076e3e20-c25a-456a-beda-6b3b0c6ee8c1" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck ''Save Password''" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V4">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="797, 249, 19, 19" CvTextArea="817, 250, 94, 16" CvTextArgument="Saye Password" CvType="CheckBox" DesignTimeRectangle="799, 247, 114, 22" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Save Password' role='check box' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='User Info' role='page tab' /&gt;&lt;java name='Save Password' role='check box' check:fulltext='Save Password' /&gt;" Guid="2f1a28cf-4384-42be-b353-10a2be07a413" InformativeScreenshot="1499336f0b089a30ca95d793833a971f.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Hostname''" EmptyFieldMode="SingleLine" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Text="abc" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="409, 370, 521, 24" CvType="InputBox" DesignTimeRectangle="409, 370, 521, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Hostname' role='text' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Hostname' role='text' /&gt;" Guid="90312067-d1bf-4bc6-8273-737fe43aa2db" InformativeScreenshot="e1c15e9f808464471fdccfc223e691cd.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvTextArea="301, 372, 62, 15" CvTextArgument="Hostname" CvType="Text" DesignTimeRectangle="304, 370, 60, 18" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Hostname' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Hostname' role='label' check:text='Hostname' /&gt;" Guid="897b7534-eca1-44f7-956d-f11e81ffee09" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Service name''" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="302, 451, 20, 20" CvTextArea="322, 453, 83, 13" CvTextArgument="Service name" CvType="RadioButton" DesignTimeRectangle="304, 449, 103, 23" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Service name' role='radio button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Service name' role='radio button' check:fulltext='Service name' /&gt;" Guid="2de9fda7-ba11-4133-8c5b-62b37bbc4a71" InformativeScreenshot="a9d5fd4c5a2c9be4ce636d9894d6665f.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''text''" EmptyFieldMode="SingleLine" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Text="work" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="412, 448, 518, 24" CvType="InputBox" DesignTimeRectangle="409, 449, 521, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java cls='JTextField' idx='4' role='text' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java cls='JTextField' role='text' /&gt;" Guid="8aa8bb73-545a-46ff-8550-20835db09feb" InformativeScreenshot="1de01d79570970641d38ea30b7d8a3fe.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="302, 451, 20, 20" CvTextArea="322, 453, 83, 13" CvTextArgument="Service name" CvType="RadioButton" DesignTimeRectangle="304, 449, 103, 23" ElementType="RadioButton" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Service name' role='radio button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Details' role='page tab' /&gt;&lt;java name='Service name' role='radio button' check:fulltext='Service name' /&gt;" Guid="2ffef2af-8dba-4edd-8203-94eabb3015a5" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Save''" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="335, 577, 118, 28" CvTextArea="376, 582, 32, 13" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="337, 578, 115, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Save' role='push button' check:text='Save' /&gt;" Guid="e5144239-c7bd-48de-a8f2-430957290b34" InformativeScreenshot="55fa8c44632a47fc5234fff228a2f1a7.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Test''" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="585, 576, 118, 28" CvTextArea="629, 582, 30, 13" CvTextArgument="Test" CvType="Button" DesignTimeRectangle="587, 578, 115, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Test' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Test' role='push button' check:text='Test' /&gt;" Guid="2f11d574-e15a-4e21-add3-46dfe4e8d875" InformativeScreenshot="7e3e9dfc572cc0f701cb90176fea5d18.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Connect''" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd6debb2-85ae-4f0e-844c-bc9b4bfbed46" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="4038eeea-18bc-48ea-9a11-c7f965f1d2c5" CvElementArea="710, 576, 118, 28" CvTextArea="741, 582, 53, 15" CvTextArgument="Connect" CvType="Button" DesignTimeRectangle="712, 578, 115, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Connect' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Connect' role='push button' check:text='Connect' /&gt;" Guid="280e6c6e-65bd-4b1c-bd42-90a688948570" InformativeScreenshot="e31f6447f629ee61dc3875243457a8e0.png" ScopeSelectorArgument="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtDialog' title='New / Select Database Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-10, -10, 1940, 1040" FilePath="C:\\Program Files (x86)\\sqldeveloper\\sqldeveloper\\bin\\sqldeveloper64w.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANrSURBVFhH7VVbSFRRFD2EGsLko8zmYSUVkZAfGRX1odBHUqCSYhL00YMgoq8yfGuEiPQCLTLUIEjIFzhkmCglYz7xrQSRVCIypTaapRCGrc6+90wzd/Tq1SbqwwWLe7l377PW2eecfdgq7IjKbD0andFm5YSbaaWxhYw6KLDcMoz+DzYF+97b0DVoQ/sbG5pff0bjwDgaesfwxDKC8iYrzG2jqOmyoa53UmJt9wTMraMoeTmMguq3SC7ukUwIGXWQW1dxdxi4UdYvVULIqGPVwKqBf24gKqPNlpDdIQW7k7HX2uk5IWTUQQb+Vh+gsYWMOsitq7hWAzdrzYgvPo2QnG3YmO7F6Ymd2cGIzEvAxYdFUiWEjDpWYiC/thEH7xxCQB6DvorB1MKwuVcmvdM3+hecugcbUtguIbUwlmvgelUlDJk66Cu54MDipBj/VPbNN5EdFnLzsRwDJa+aYcxcB8MzWcDUxEUq5KeruJ0Uy01M+V9ioUJSCa0GLANjOHB7r2LmJG4eLEXoIwMM1UphZ1LO+iTWyeU8ZVUnaDVwt74SAfnKgQPvMxC+fJ/EVcsF6AvWwPhCGWMn5fqeZ3FC1gGtfSAkLUbaXM6D2g3Y0fGpBRFloTCYGYI6lbGU63eZlXDJtbKygNY+EJITLO92p0FdDRBm52aR352LLYXeMD53xFKufzIb4pJ+srIAzc5VfCEDdM6lo7aEATuGpt4hoToSpkYRz3P5ZpzlkoGysoBWA8YsHYK6tRuwTo/gbG0cTA3zDBhkZQGtBnbn7oCpeWkDcz/nUNSfj+3FPjDWOGKlJUiRlmBlBmILT0D/dHEDA+M9OFK5T96E7cpYyvVLZBVccpOsLKDVQF5dueoxnJmdRlbzFRgfeMBYr4yxk3J9zrCTXNJfVhbQaoAa0f5bYcpGVMpQN1SNsMdbYaDq9Dn+OVNqyUmsi8uZOJXHkBuwVjRqu46pFRsydI5WbJFN0NNV1E6pFaewr7rjLILLBciqTohJbzvGTXykSmhheNo9BKR6KyqhRmnm/DLSnZI6oJ7TQxL9U9DFQr2d1vX3dczLH9TD3+mCouuY/6Oy66JZOE+hne8lJbsRnr7nWDy1VzpefKY/OGd4txukb2LD0ZpT2d0zcxXQpqL2SseLZkqkbkfflBvu/wFjvwAitpykXQzhZwAAAABJRU5ErkJggg==" InformativeScreenshot="82ee00fc630c9545730d160f0db22066.png" Selector="&lt;wnd app='sqldeveloper64w.exe' cls='SunAwtFrame' title='Oracle SQL Developer : C:\Users\sharapaw\Documents\Data_3D\Vapp *' /&gt;" Title="Oracle SQL Developer : C:\Users\sharapaw\Documents\Data_3D\Vapp 20 OMS.sql" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
